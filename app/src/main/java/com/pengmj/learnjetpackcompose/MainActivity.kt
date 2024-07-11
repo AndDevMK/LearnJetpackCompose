@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.pengmj.learnjetpackcompose.example03.Example03ProgramEntry
+import com.pengmj.learnjetpackcompose.example04.Example04ProgramEntry
 import com.pengmj.learnjetpackcompose.ui.theme.LearnJetpackComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,7 +22,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             LearnJetpackComposeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Example03ProgramEntry(modifier = Modifier.padding(innerPadding))
+                    Example04ProgramEntry(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
@@ -39,6 +40,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun GreetingPreview() {
     LearnJetpackComposeTheme {
-        Example03ProgramEntry()
+        Example04ProgramEntry()
     }
 }
