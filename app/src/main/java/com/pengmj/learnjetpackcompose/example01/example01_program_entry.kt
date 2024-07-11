@@ -39,12 +39,18 @@ import com.pengmj.learnjetpackcompose.R
 fun Example01ProgramEntry(
     modifier: Modifier = Modifier,
 ) {
-    Conversation(messages = MessageService.messages)
+    Conversation(
+            modifier = modifier,
+            messages = MessageService.messages,
+    )
 }
 
 @Composable
-fun Conversation(messages: List<MessageModel>) {
-    LazyColumn {
+private fun Conversation(
+    modifier: Modifier = Modifier,
+    messages: List<MessageModel>,
+) {
+    LazyColumn(modifier = modifier) {
         items(messages) { message ->
             MessageCard(messageModel = message)
         }
