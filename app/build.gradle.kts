@@ -56,7 +56,8 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation(libs.androidx.constraintlayout)
+    implementation(libs.constraintlayout.compose)
+    implementation(libs.livedata.compose)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
